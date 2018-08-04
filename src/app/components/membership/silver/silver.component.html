@@ -1,0 +1,26 @@
+<section class="container section-padding">
+  <div class="row">
+    <div class="col-md-12 text-center" style=" background-color: #9b9b9b;box-shadow: 0 2px 3px 0 #9b9b9b;padding:15px;color:white">
+      <h1>Silver Membership</h1>
+    </div>
+  </div>
+  <div style="background-color: white;box-shadow: 0 3px 12px 0 rgba(155, 155, 155, 0.54);padding:15px">
+  <div class="row">
+    <div class="col-md-6 section-padding">
+      <ul class="list" *ngFor="let item of list">
+        <li><i class="fa fa-check" aria-hidden="true" style="margin-right: 8px"></i>{{item.name}}</li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 section-padding membership-image" style="padding-top:20px;">
+      <img src="../../../../assets/images/silver-membership.png" class="img-responsive">
+    </div>
+  
+  </div>
+  <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 text-center section-padding">
+        <app-formmodal [page]="page" [buttonText]="buttonText"></app-formmodal>
+      </div>
+    </div>
+  </div>
+  
+</section>
